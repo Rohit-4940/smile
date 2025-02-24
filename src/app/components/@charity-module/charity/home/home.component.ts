@@ -5,6 +5,7 @@ import {WorksComponent} from '../work/works.component';
 import {ChatService} from '../../../../shared-service/chat.service';
 import {Router} from '@angular/router';
 import {BlogListComponent} from '../blog-list/blog-list.component';
+import {ImageGalleryComponent} from '../image-gallery/image-gallery.component';
 
 
 @Component({
@@ -14,6 +15,7 @@ import {BlogListComponent} from '../blog-list/blog-list.component';
     ContactMeComponent,
     WorksComponent,
     BlogListComponent,
+    ImageGalleryComponent,
   ],
   templateUrl: './home.component.html',
   standalone: true,
