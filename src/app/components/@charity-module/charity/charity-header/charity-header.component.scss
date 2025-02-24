@@ -278,6 +278,21 @@ $transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     color: #3CC78F;
   }
 }
+.logo {
+  width: 30%;  // Default size for larger screens
+  margin-left: -4%;
+
+  @media (max-width: 768px) {  // Tablet and mobile
+    width: 50%;  // Increase size for smaller screens
+    margin-left: 0;  // Adjust margin if needed
+  }
+
+  @media (max-width: 480px) {  // Small mobile screens
+    width: 60%;  // Make it even bigger for extra small screens
+    margin-left: 0;
+  }
+}
+
 
 // Animation
 @keyframes fadeInDown {
