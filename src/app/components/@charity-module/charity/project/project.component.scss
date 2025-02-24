@@ -196,6 +196,27 @@ body {
 .container .card ul li:hover a {
   color: #3CC78F;
 }
+@media (max-width: 768px) {
+  /* Apply hover styles by default on mobile */
+  .container .card::before {
+    height: 150px;
+  }
+
+  .container .card .img-container {
+    border: 10px solid #3CC78F;
+  }
+
+  .container .card .img-container img {
+    box-shadow: 0 0 0 14px #f7f5ec;
+    transform: scale(0.8);
+  }
+
+  .container .card ul {
+    transform: translateY(40px);
+  }
+}
+
+//youtube video
 
 .video-container {
   position: relative;
