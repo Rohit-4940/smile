@@ -364,3 +364,83 @@ app-chat-window {
   }
 }
 
+
+//about
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px; /* Increased space between image and text */
+  flex-wrap: wrap;
+  padding: 40px 20px; /* Adds space around the section */
+}
+
+.about-image {
+  width: 100%;
+  max-width: 350px; /* Adjusted image size */
+  height: auto;
+  border-radius: 10px;
+}
+
+.text-content {
+  flex: 1;
+  max-width: 540px;
+}
+
+.about-title {
+  color: #1e9161;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.text-content p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* About Us Button */
+/* About Us Button */
+.about-btn {
+  display: inline-block;
+  background-color: #1e9161;
+  color: white;
+  padding: 14px 32px; /* Increased padding for bigger size */
+  font-size: 18px; /* Increased font size */
+  border-radius: 10px; /* Slightly rounded corners */
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  min-width: 180px; /* Ensures button has a minimum width */
+  text-align: center;
+}
+
+.about-btn:hover {
+  background-color: #157347;
+}
+
+/* Responsive: Adjust button for small screens */
+@media (max-width: 768px) {
+  .about-btn {
+    font-size: 16px;
+    padding: 12px 28px;
+    min-width: 160px;
+  }
+}
+
+
+/* Responsive: Stack on small screens */
+@media (max-width: 768px) {
+  .about-section {
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .about-image {
+    max-width: 80%;
+  }
+}
+
