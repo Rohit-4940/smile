@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
   {
     path: '',
-    redirectTo: 'charity',
+    redirectTo: 'charity/home',
     pathMatch: 'full'
   },
   {
@@ -12,7 +12,7 @@ export const routes: Routes = [
       import('./components/@charity-module/charity.routes').then(
         (m) => m.CharityRoutes
       ),
-    data: { preload: true, title: 'Portfolio' }
+    data: { preload: true, title: 'Give with Smile' }
   },
   {
     path: 'tools',
@@ -32,7 +32,7 @@ export const routes: Routes = [
         return null;
       },
     },
-    redirectTo: 'charity', // Or a 404 page
+    redirectTo: 'charity/home', // Or a 404 page
     pathMatch: 'full'
   }
 
